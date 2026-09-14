@@ -1,0 +1,349 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.about-banner {
+    padding: 20px 0px;
+}
+
+.about-banner h3 {
+    margin: 10px;
+    text-align: center;
+    color: rgb(144, 0, 0);
+    text-transform: uppercase;
+}
+
+.about-banner h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0px;
+}
+
+.about-banner p {
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    opacity: 0.8;
+    padding: 10px;
+}
+
+@media (min-width:768px) {
+    .about-banner h1 {
+        font-size: 3rem;
+    }
+
+    .about-banner p {
+        padding: 30px 50px;
+    }
+}
+
+/*.......................about description section styling .....................*/
+
+.abt-des-left-cont {
+    display: none;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 1px red solid;
+}
+
+.abt-des-left-cont h1 {
+    color: yellow;
+}
+
+.abt-des-left-cont p {
+    color: rgb(242, 239, 239);
+}
+
+.abt-des-left {
+    position: relative;
+}
+
+.abt-des-left-img {
+    position: relative;
+}
+
+.abt-des-left img {
+    width: 80%;
+    max-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.abt-des-left-img::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 50%;
+    background: linear-gradient(to bottom,
+            transparent,
+            rgba(0, 0, 0, 0.8));
+    border-radius: 15px;
+}
+
+
+.abt-des-right h3 {
+    color: rgb(121, 0, 0);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1rem;
+
+}
+
+.abt-des-right h1 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.abt-des-right p {
+    text-align: justify;
+    margin: 20px;
+}
+
+@media (min-width:768px) {
+    .abt-des-left-cont {
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .abt-describe {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 30px;
+    }
+}
+
+/*...................................about inspection section .................*/
+
+.abt-inspection {
+    padding: 20px;
+}
+
+.abt-inspection h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0px;
+}
+
+@media (min-width:768px) {
+    .abt-inspection h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width:1024px) {
+    .abt-inspection h1 {
+        font-size: 3rem;
+    }
+}
+
+.abt-inspection p {
+    text-align: center;
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.abt-ins-btn {
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: yellow;
+    border: 0.5px solid black;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/*............................portfolio section styling ........................*/
+.portfolio-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 20px 10px;
+}
+
+@media (min-width:768px) {
+    .portfolio-btn {
+        gap: 2rem;
+    }
+}
+
+.port-btn {
+    padding: 5px 15px;
+    text-transform: uppercase;
+    max-width: 200px;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.port-btn:hover {
+    background-color: yellow;
+    transform: scale(1.02);
+}
+
+
+.portfolio-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.port-card {
+    width: 100%;
+    max-width: 400px;
+    background: #020817;
+    border: 1px solid #263248;
+    border-radius: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* ---------------- IMAGE ---------------- */
+
+.port-image-box {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+}
+
+.port-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Darkens the bottom of the image */
+.port-image-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+
+    background: linear-gradient(to bottom,
+            transparent 0%,
+            rgba(0, 0, 0, 0.25) 35%,
+            rgba(0, 0, 0, 0.9) 100%);
+}
+
+/* ---------------- CATEGORY ---------------- */
+
+.port-category {
+    position: absolute;
+    left: 20px;
+    bottom: 58px;
+
+    padding: 5px 11px;
+
+    background: rgba(40, 35, 0, 0.85);
+    border: 1px solid #b88a00;
+    border-radius: 15px;
+
+    color: #ffd21c;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+/* ---------------- TITLE ---------------- */
+
+.port-title {
+    position: absolute;
+    left: 20px;
+    right: 15px;
+    bottom: 17px;
+
+    margin: 0;
+
+    color: white;
+    font-size: 21px;
+    line-height: 1.15;
+    font-weight: 800;
+
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* ---------------- CONTENT ---------------- */
+
+.port-content {
+    padding: 25px 23px 22px;
+}
+
+.port-description {
+    margin: 0;
+
+    color: #a8c7f5;
+
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+/* ---------------- DIVIDER ---------------- */
+
+.port-divider {
+    width: 100%;
+    height: 1px;
+    background: #263248;
+
+    margin: 15px 0;
+}
+
+/* ---------------- BOTTOM ---------------- */
+
+.port-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.port-price {
+    color: #ffd21c;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.port-button {
+    color: #dce8ff;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.port-button:hover {
+    color: #ffd21c;
+}
+

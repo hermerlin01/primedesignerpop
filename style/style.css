@@ -1,0 +1,1431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*................body section styling ................*/
+
+body {
+    background-color: white;
+    height: 100%;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(255, 253, 253);
+    background-image: url('../img/img01.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*.............navigation styling ...................*/
+
+.navbar {
+    margin: 0px;
+}
+
+/*...............nav-top section stying ...............*/
+
+
+.address {
+    color: rgb(9, 9, 9);
+    font-weight: 500;
+    text-align: center;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+.nav-top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.call-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #a09606;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 0.7rem;
+}
+
+.call-btn:hover {
+    transform: scale(1.05);
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    padding: 9px 22px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+    max-width: 150px;
+    font-size: 0.7rem;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.05);
+}
+
+
+/*.......responsiveness of nav-top section................*/
+
+@media (min-width:600px) {
+    .nav-top {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 30px;
+    }
+}
+
+/*.......................nav-btm section stying .......................*/
+
+
+.nav-btm {
+    background-color: rgb(9, 0, 32);
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.nav-btm-left {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.logo-icon {
+
+    font-size: 2rem;
+    background-color: gold;
+    background-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.logo-brand h1 {
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #fbfbfd, #ffd900);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+.logo-brand p {
+    color: white;
+    text-transform: uppercase;
+    margin: 0px;
+    font-size: 0.6rem;
+}
+
+.nav-btm-right {
+    color: white;
+
+
+}
+
+
+/*........................toggle menu.........................*/
+
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: rgb(244, 240, 240);
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.nav-links a:hover {
+    color: rgb(0, 212, 212);
+    transform: scale(1.2);
+}
+
+/*............... HAMBURGER .................*/
+
+.hamburger {
+    display: none;
+    color: white;
+    border: none;
+    background: none;
+
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* ............... SIDE MENU ..................*/
+
+.side-menu {
+
+    position: fixed;
+
+    top: 0;
+
+    /* Hidden outside right side */
+    right: -70%;
+
+    /* 70% of screen width */
+    width: 70%;
+
+    /* Full screen height */
+    height: 100vh;
+
+    background: rgb(113, 19, 19);
+
+
+    z-index: 2;
+    padding: 100px 40px;
+
+    transition: right 0.4s ease;
+
+}
+
+
+/*................ OPEN MENU..................... */
+
+.side-menu.active {
+    right: 0;
+    z-index: 1;
+}
+
+
+.mobile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mobile-links a {
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+
+    font-size: 24px;
+}
+
+
+/*...........close btn................*/
+
+
+.close-btn {
+    position: absolute;
+    color: white;
+    top: 25px;
+    right: 30px;
+
+    border: none;
+    background: none;
+
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+
+/*............responsive querry ........................*/
+
+
+@media (max-width: 768px) {
+
+    /* Hide desktop links */
+    .nav-links {
+        display: none;
+    }
+
+    /* Show hamburger */
+    .hamburger {
+        display: block;
+    }
+
+}
+
+
+/* Hide mobile menu on desktop */
+
+@media (min-width: 769px) {
+
+    .side-menu {
+        display: none;
+    }
+
+}
+
+
+/*..................nav-btm responsiveness.......................*/
+
+@media (min-width:800px) {
+    .nav-links {
+        margin-right: 20px;
+    }
+}
+
+
+/*.....................banner section stying ......................*/
+
+.banner {
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+
+}
+
+.banner-left {
+    padding: 10px;
+}
+
+.banner-left h1 {
+    color: rgb(21, 20, 20);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: outfit, sans-serif;
+}
+
+.gradient-text {
+    background: radial-gradient(circle, #ea0000, #630000);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.banner-left p {
+    color: rgb(14, 14, 14);
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 1rem;
+}
+
+@media (min-width:425px) {
+    .banner-left h1 {
+        font-size: 2rem;
+    }
+
+    .banner-left p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:768px) {
+    .banner-left h1 {
+        font-size: 3rem;
+    }
+
+    .banner-left p {
+        font-size: 1.5rem;
+    }
+}
+
+.feature {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid rgb(69, 56, 56);
+    margin: 10px 0px;
+    gap: 1rem;
+}
+
+.feature h1 {
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+
+.feature p {
+    font-size: 0.9rem;
+    text-align: center;
+
+}
+
+.banner-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 10px;
+
+}
+
+.cal-price {
+    background-color: #ecfa28;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.cal-price:hover {
+    transform: scale(1.05);
+}
+
+.banner-call-btn {
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+/*...................form section styling.......................*/
+
+.banner-right {
+    background: rgb(9, 0, 50);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    position: relative;
+
+}
+
+.border-text {
+    position: absolute;
+    top: -12px;
+    right: 25px;
+    border-radius: 10px;
+    background: rgb(255, 238, 0);
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#req-call {
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#ins-req-call {
+    width: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.banner-right h3 {
+    color: white;
+    text-transform: capitalize;
+    margin: 5px 0px;
+
+}
+
+.banner-right p {
+    color: white;
+    text-transform: capitalize;
+    opacity: 0.5;
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+
+}
+
+/* .............EACH FIELD .....................*/
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/*...................... LABEL......................... */
+.form-group label {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+
+/* .....................INPUT + SELECT + TEXTAREA.................. */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+
+    background: rgb(5, 5, 32);
+    color: #fcfcfc;
+
+    font-size: 15px;
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #940000;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #555;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* SELECT OPTIONS */
+.form-group select option {
+    background: #bd0404;
+    color: #fefcfc;
+}
+
+
+/* BUTTON */
+#req-call button {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #d8f30a;
+    color: #000000;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#ins-req-call button {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #d8f30a;
+    color: #000000;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+
+/* BUTTON HOVER */
+#carForm button:hover {
+    transform: scale(1.03);
+    opacity: 0.85;
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px 14px;
+    }
+
+    #carForm button {
+        padding: 13px;
+    }
+}
+
+
+/*.....................responsiveness banner sectin .........................*/
+
+@media (min-width:1024px) {
+    .banner {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 5rem;
+        padding: 50px;
+    }
+
+    .banner-right {
+        width: 50%;
+
+    }
+
+    .banner-left {
+        width: 50%;
+    }
+
+    .banner-left h1 {
+        font-size: 2.5rem;
+        text-align: start;
+    }
+
+    .banner-left p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .feature {
+        gap: 3rem;
+    }
+
+    .feature h1 {
+        font-size: 2rem;
+    }
+
+    .feature p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .banner-left h1 {
+        font-size: 3rem;
+        text-align: start;
+    }
+
+    .banner-left p {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+}
+
+
+
+/*.....................factor section styling .............................*/
+.factor {
+    background-color: white;
+   
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.factor h3 {
+    color: rgb(253, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.factor h1 {
+    color: rgb(14, 13, 13);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0px;
+    font-size: 1.8rem;
+}
+
+.factor-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Small screens: 1 column */
+    gap: 20px;
+    transition: 1s;
+}
+
+.factor-card:hover {
+    border: 1px red solid;
+    transform: scale(1.02);
+}
+
+/* 768px and above: 2 columns */
+@media (min-width: 768px) {
+    .factor-cards {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px;
+    }
+}
+
+/* 1024px and above: 4 columns */
+@media (min-width: 1024px) {
+    .factor-cards {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 50px;
+    }
+}
+
+.factor-card {
+    border: 1px solid black;
+    background-color: rgb(9, 0, 50);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 10px;
+}
+
+.factor-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #bfd325;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 10px;
+
+}
+
+.factor-card h2 {
+    color: white;
+    text-transform: capitalize;
+    text-align: start;
+    margin: 20px 0px;
+}
+
+.factor-card p {
+    color: white;
+    opacity: 0.7;
+}
+
+/*.......................solution styling ...........................*/
+
+
+.solution {
+    padding: 20px;
+    background-color: white;
+    border-top: 1px solid gray;
+}
+
+
+.sol-top-left h2 {
+    color: red;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+}
+
+.sol-top-left h1 {
+    color: rgb(7, 7, 7);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 10px 0px ;
+}
+
+.sol-top-right h2 {
+    color: red;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+@media (min-width:768px) {
+    .sol-top {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+
+    .sol-top-right h2 {
+        margin: 0px;
+    }
+}
+
+.sol-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin: 30px 0px;
+
+}
+
+.sol-card {
+    max-width: 400px;
+    min-height: 420px;
+    padding: 15px;
+    border-radius: 15px;
+   background-color: rgb(9, 0, 50);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid rgb(51, 50, 50);
+
+}
+
+.sol-card:hover {
+    border: 1px solid red;
+}
+
+.sol-img {
+    position: relative;
+}
+
+.sol-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.sol-card img:hover {
+    transform: scale(1.05);
+}
+
+.sol-title {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: rgb(57, 53, 63);
+    border: 1px solid rgb(142, 137, 137);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.5rem;
+
+
+}
+
+.sol-title h2 {
+    color: white;
+}
+
+
+.sol-content {
+    padding: 10px 5px;
+    min-height: 150px;
+}
+
+.sol-content h2 {
+    margin: 10px 0;
+    color: white;
+}
+
+.sol-content p {
+    margin: 0;
+    line-height: 1.6;
+    color: white;
+    opacity: 0.5;
+    font-weight: 100;
+    font-size: 0.7rem;
+}
+
+.sol-btn {
+    margin-top: auto;
+    display: inline-block;
+    padding: 12px 18px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    background: #bbf303;
+    color: rgb(3, 3, 3);
+}
+
+.sol-icon {
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 10px 0px;
+    gap: 1rem;
+
+}
+
+.sol-icon i {
+    color: yellow;
+}
+
+.sol-icon p {
+    margin: 0px;
+}
+
+/*........................calculation styling ...........................*/
+
+
+.calculation {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-top: 1px solid gray;
+
+}
+
+.calculation h3 {
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.calculation h1 {
+    color: rgb(13, 13, 13);
+    text-transform: uppercase;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0px;
+}
+
+@media (min-width:500px) {
+    .calculation h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:768px) {
+    .calculation h1 {
+        font-size: 3rem;
+    }
+}
+
+.calculation p {
+    color: rgb(18, 17, 17);
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.cal-form {
+    border: 1px solid rgb(44, 44, 44);
+    padding: 20px;
+    background: linear-gradient(to bottom, #0e0d0d, #070b26);
+    border-radius: 15px;
+
+}
+
+@media (min-width:768px) {
+    .cal-form {
+        display: flex;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .cal-form-left {
+        flex: 2;
+    }
+
+    .cal-form-right {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+}
+
+.cal-form h2 {
+    color: white;
+    font-size: 1rem;
+    margin: 10px 0px;
+}
+
+.options label {
+    display: block;
+    background-color: #181928;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.options label:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.options input[type="radio"] {
+    margin-right: 0px;
+}
+
+.cal-room {
+    margin-top: 20px;
+}
+
+.cal-form-right {
+    padding: 5px;
+    background-color: #181928;
+    border: 1px solid #2d5249;
+    border-radius: 15px;
+}
+
+.range-labels {
+    font-size: 0.9rem;
+    color: #bbb;
+    text-align: start;
+    margin-top: 10px;
+}
+
+.output {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.output h2 {
+    color: white;
+    opacity: 0.5;
+}
+
+.output p {
+    color: yellow;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.output ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.output li {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.btn {
+    display: block;
+    width: 90%;
+    padding: 10px 14px;
+    background: #FFD700;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.btn:hover {
+    background: #e6c200;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+/*...........................reviews section sytling ..................*/
+.reviews {
+   background-color: white;
+    border-top: 1px solid #710c0c;
+    padding: 20px;
+}
+
+@media (min-width:768px) {
+    .reviews {
+        padding: 50px;
+
+    }
+}
+
+.reviews h2 {
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 300px;
+    margin: 5px;
+}
+
+.reviews h1 {
+    color: rgb(19, 19, 19);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+
+.review-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 10px 0px;
+}
+
+@media (min-width:768px) {
+    .review-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:1024px) {
+    .review-cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+}
+
+.review-card {
+    border: 1px solid rgb(60, 58, 58);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 5px;
+    background-color: #181928;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.rev-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rev-top i {
+    color: yellow;
+    font-size: 0.9rem;
+}
+
+.rev-location {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    background-color: #2b2a34;
+    padding: 4px 5px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.review-card p {
+    color: white;
+    opacity: 0.7;
+    text-transform: capitalize;
+    text-align: justify;
+    margin: 20px 0px;
+    min-height: 100px;
+}
+
+.rev-btm {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    border-top: 1px solid gray;
+    padding: 10px 0px;
+}
+
+.rev-btm-left h3 {
+    color: white;
+}
+
+.rev-btm-left h4 {
+    color: red;
+    font-size: 0.9rem;
+    font-weight: 100;
+    opacity: 0.8;
+}
+
+.rev-btm-profile {
+    background-color: yellow;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.rev-btm-profile h5 {
+    font-size: 1.5rem;
+}
+
+
+/*......................visit site inspection section styling ................*/
+
+
+.visit {
+    padding: 20px;
+    background-color: white;
+    border-top: 1px solid gray;
+}
+
+.visit-left h3 {
+    color: red;
+    text-transform: uppercase;
+    align-items: start;
+    
+
+}
+
+.visit-left h1 {
+    color: rgb(8, 8, 8);
+    text-transform: uppercase;
+    text-align: start;
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+
+.visit-left p {
+    color: rgb(17, 16, 16);
+    text-transform: capitalize;
+    text-align: start;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.visit-btm {
+    border-top: 1px solid gray;
+    padding: 10px 0px;
+}
+
+.visit-left-btm {
+    display: flex;
+    gap: 1rem;
+    margin: 10px;
+    align-items: start;
+}
+
+.visit-icon {
+    background-color: #201259;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.visit-left-btm i {
+    color: yellow;
+    font-size: 1.3rem;
+}
+
+.visit-left-btm h4 {
+    color: rgb(23, 23, 23);
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.visit-left-btm h5 {
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    opacity: 0.5;
+    font-weight: 100;
+    margin: 5px 0px;
+}
+
+@media (min-width:1024px) {
+    .visit {
+        display: flex;
+        padding: 50px ;
+    }
+
+    .visit-left {
+        padding: 0px 30px;
+        flex: 1;
+    }
+
+    .form-group-flex {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+/*............................footer section styling .........................*/
+
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer h2,
+.footer h3 {
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 8px 0;
+}
+
+.footer ul li a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #FFD700;
+}
+
+.contact-icons a {
+    font-size: 1.2rem;
+    color: #000000;
+    padding: 5px;
+    background-color: #d4ff00;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 10px;
+
+}
+
+.contact-icons p{
+    color: rgb(17, 17, 16);
+}
+
+.contact-icons a:hover {
+    color: #fff;
+}
+
+.map iframe {
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #bbb;
+}
+
+.footer-bottom a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .map iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+
+/*..........extra..............*/
+
+.footer-brand {
+    align-items: start;
+}
+
+.footer-brand-p {
+    margin: 20px 0px;
+}
+
+.footer-service {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-service i {
+    color: yellow;
+}
+
+.footer-quick-link{
+    display: none;
+}
+@media (min-width:768px) {
+    .footer-quick-link{
+        display: block;
+    }
+}
+
+
+/*........extra...........*/
+
+.nav-top-right a{
+    display: flex;
+    align-items: center;
+    gap:0.8rem;
+}
+.banner-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+.banner-btn p{
+    font-size: 1rem;
+    margin: 0px;
+}
